@@ -1,0 +1,109 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  justify-content: center;
+  background-image:url(../assets/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+::-webkit-scrollbar{
+  display: none;
+}
+.container{
+  max-width: 1200px;
+  margin: 0px auto;
+  padding: 0px 15px;
+}
+.quizapp{
+  width: 1000px;
+  display: flex;
+  gap: 100px;
+  justify-content: space-between;
+}
+.row h2{
+  margin-bottom: 60px;
+  border-radius: 15px;
+}
+select{
+  outline: none;
+  border: 1px solid;
+  margin-bottom: 20px;
+  border: none;
+  padding: 20px;
+}
+ul{
+  margin: 0;
+  padding: 0;
+  
+}
+li{
+  list-style: none;
+}
+
+/* .list-item  {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 150px;
+   row-gap: 35px;
+  justify-content: space-between;
+} */
+
+.list-item ul{
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 50px;
+  row-gap: 35px;
+  margin-bottom: 30px;
+  justify-content: space-between;
+}
+.list-item h2{
+  border: 1px solid black;
+  padding: 15px;
+  background: linear-gradient(#0e0124,#22074d);
+}
+.list-item li{
+  padding: 15px;
+  max-width: 39%;
+  width: 100%;
+  align-self: center;
+  border-radius: 15px;
+  background: linear-gradient(#0e0124,#22074d);
+}
+.row {
+  display: flex; /* Ensures children (select and .list-item) are in a row */
+  flex-direction: column;
+  align-self: center ;
+  width: 70%;
+}
+.moneylist_item{
+  width: 30%;
+  padding: 20px;
+  background: linear-gradient(#0e0124,#22074d);
+  height: 500px;
+  overflow: auto;
+}
+.select-dropdown {
+   /* Makes the select element take remaining space */
+  max-width: 500px;
+}
+.list-item {
+  flex: 2; 
+  margin-bottom: 20px;
+}
+.next_btn{
+  padding: 15px;
+  outline: none;
+  border: 1px solid;
+  cursor: pointer;
+  background: linear-gradient(#0e0124,#22074d);
+  color: #fff;
+  max-width: 100px;
+  width: 100%;
+}
